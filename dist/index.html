@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Polymer | JS workflow</title>
+
+    <!-- WC loader detects and lazy loads only the required polyfills -->
+    <script src="https://cdn.rawgit.com/webcomponents/webcomponentsjs/master/webcomponents-loader.js"></script>
+    <!-- Required for have it working on Firefox & Edge, no impact on Chrome & Safari -->
+    <script>
+      window.addEventListener('WebComponentsReady', function(){
+        console.log('WebComponentsReady');
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = "./bundle.js";
+        document.body.appendChild(script);
+      });
+    </script>
+
+</head>
+<body>
+
+  <cool-element></cool-element>
+
+</body>
+</html>
