@@ -6,7 +6,8 @@
   "author": "Salvatore Laisa <moebiusmania@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "concurrently -k \"http-server ./dist -s -p 8081\" \"webpack -w\""
+    "start": "concurrently -k \"http-server ./dist -s -p 8081\" \"webpack -w\"",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@polymer/polymer": "^2.0.0",
@@ -18,6 +19,7 @@
     "concurrently": "^3.4.0",
     "gh-pages": "^1.0.0",
     "http-server": "^0.10.0",
+    "uglify-es": "git://github.com/mishoo/UglifyJS2#harmony",
     "uglifyjs-webpack-plugin": "^0.4.3",
     "wc-loader": "^1.1.3",
     "webpack": "^2.6.0",
