@@ -1,0 +1,14 @@
+<dom-module id="list-data">
+	<template>
+    <style></style>
+    <ul>
+      <dom-repeat items="[[data]]">
+        <template>
+          <li data-id$="[[item.id]]" data-user$="[[item.userId]]">
+            <strong>[[item.title]]</strong> - [[item.body]]
+          </li>
+        </template>
+      </dom-repeat>
+    </ul>
+	</template>
+</dom-module>

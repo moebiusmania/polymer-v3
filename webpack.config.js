@@ -14,8 +14,7 @@ module.exports = {
   devtool: 'source-map',
   plugins: [
     new UglifyJSPlugin({
-      sourceMap: true,
-      mangle: false
+      sourceMap: true
     }),
     new WebpackNotifierPlugin({
       title: 'Polymer (2) JS',

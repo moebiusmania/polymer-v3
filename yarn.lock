@@ -2438,8 +2438,8 @@ type-check@~0.3.2:
     prelude-ls "~1.1.2"
 
 "uglify-es@git://github.com/mishoo/UglifyJS2#harmony":
-  version "3.0.11"
-  resolved "git://github.com/mishoo/UglifyJS2#c988e5f4d6eb06b954aca8cf7a5e34bf01ec644c"
+  version "3.0.12"
+  resolved "git://github.com/mishoo/UglifyJS2#e5e0ce0b42307fe7d535376c39caa02d5d823fe2"
   dependencies:
     commander "~2.9.0"
     source-map "~0.5.1"
