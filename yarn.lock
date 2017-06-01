@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@polymer/polymer@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@polymer/polymer/-/polymer-2.0.0.tgz#7cb047562d01e543f435730eeb7f5f8291a1fa27"
+"@polymer/polymer@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@polymer/polymer/-/polymer-2.0.1.tgz#50122f4d327dd9645316b2ea57a218d1746179ce"
 
 "@types/clone@^0.1.29":
   version "0.1.30"
@@ -2437,9 +2437,16 @@ type-check@~0.3.2:
   dependencies:
     prelude-ls "~1.1.2"
 
-"uglify-es@git://github.com/mishoo/UglifyJS2#harmony":
-  version "3.0.12"
-  resolved "git://github.com/mishoo/UglifyJS2#e5e0ce0b42307fe7d535376c39caa02d5d823fe2"
+uglify-es-webpack-plugin@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/uglify-es-webpack-plugin/-/uglify-es-webpack-plugin-0.0.2.tgz#4d133f8c666ff3f1d61929f29e093c44a25c6a27"
+  dependencies:
+    uglify-es "^3.0.10"
+    webpack-sources "^0.2.3"
+
+uglify-es@^3.0.10:
+  version "3.0.15"
+  resolved "https://registry.yarnpkg.com/uglify-es/-/uglify-es-3.0.15.tgz#4a23d0e9cb5f25f7bb3f1f0bbe0bb364e600d047"
   dependencies:
     commander "~2.9.0"
     source-map "~0.5.1"
@@ -2463,13 +2470,6 @@ uglify-js@^2.4.19, uglify-js@^2.8.27:
 uglify-to-browserify@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/uglify-to-browserify/-/uglify-to-browserify-1.0.2.tgz#6e0924d6bda6b5afe349e39a6d632850a0f882b7"
-
-uglifyjs-webpack-plugin@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/uglifyjs-webpack-plugin/-/uglifyjs-webpack-plugin-0.4.3.tgz#a672a7d6655f94dfa7e09670d48030f37cc93267"
-  dependencies:
-    source-map "^0.5.6"
-    webpack-sources "^0.2.3"
 
 uid-number@^0.0.6:
   version "0.0.6"

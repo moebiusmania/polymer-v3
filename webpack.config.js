@@ -1,7 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const WebpackNotifierPlugin = require('webpack-notifier');
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const UglifyEsPlugin = require('uglify-es-webpack-plugin');
 
 module.exports = {
   entry: [
@@ -13,9 +13,7 @@ module.exports = {
   },
   devtool: 'source-map',
   plugins: [
-    new UglifyJSPlugin({
-      sourceMap: true
-    }),
+    new UglifyEsPlugin(),
     new WebpackNotifierPlugin({
       title: 'Polymer (2) JS',
       alwaysNotify: true
