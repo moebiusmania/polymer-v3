@@ -1,7 +1,7 @@
 # polymer-js
 Example of Javascript-first workflow in Polymer.
 
-This repository holds example code for [this post on Medium]().
+~~This repository holds example code for [this post on Medium]().~~ *(coming soon)*
 
 ## Install & start
 Clone this repo, install dependencies with:
