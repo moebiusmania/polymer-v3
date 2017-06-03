@@ -3,6 +3,8 @@
 import '@polymer/polymer/polymer-element.html';
 import './template.html';
 
+import { store } from './../store';
+
 import './../list-data';
 
 class FakeApp extends Polymer.Element {

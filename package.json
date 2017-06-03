@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@polymer/polymer": "^2.0.1",
+    "redux": "^3.6.0",
     "webcomponentsjs": "^1.0.2"
   },
   "devDependencies": {

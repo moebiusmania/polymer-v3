@@ -14,6 +14,9 @@ module.exports = {
   devtool: 'source-map',
   plugins: [
     new UglifyEsPlugin(),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'production')
+    }),
     new WebpackNotifierPlugin({
       title: 'Polymer (2) JS',
       alwaysNotify: true
