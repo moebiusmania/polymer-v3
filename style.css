@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter:400,400i,700');
+
+body{
+  background-color: #eee;
+  font-family: 'Bitter', serif;
+  font-size: 18px;
+}
+
+h1,h2,p{
+  font-family: 'Bitter', serif;
+}
