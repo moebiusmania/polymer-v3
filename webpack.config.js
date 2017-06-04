@@ -31,11 +31,5 @@ module.exports = {
       exclude: ['node_modules', './dist/bundle.js'],
       loader: 'babel-loader'
     }]
-  },
-  devServer: {
-    contentBase: './'
-  },
-  resolve: {
-    mainFields: ['browserify', 'browser', 'module', 'main']
   }
 }
