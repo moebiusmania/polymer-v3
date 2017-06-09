@@ -1,18 +1,6 @@
 <dom-module id="list-data">
+  <postcss src="./style.postcss"></postcss>
 	<template>
-    <style>
-      li{
-        margin: 10px 0;
-        transition: all 0.6s ease;
-      }
-      ul:hover li{
-        opacity: 0.3;
-      }
-      ul:hover li:hover{
-        cursor: pointer;
-        opacity: 1;
-      }
-    </style>
     <ul>
       <dom-repeat items="[[data]]">
         <template>

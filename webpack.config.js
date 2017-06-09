@@ -22,11 +22,16 @@ module.exports = {
       alwaysNotify: true
     })
   ],
+  resolveLoader: {
+    alias: {
+      'postcss-666-loader': path.join(__dirname, './postcss-666-loader'),
+    },
+ },
   module: {
     rules: [{
-      test: /\.html$/,
-      loaders: ['babel-loader', 'wc-loader?minify=true']
-    },{
+      test: /\.html?$/,
+      loaders: ['wc-loader?minify=true', 'postcss-666-loader']
+    }, {
       test: /\.js?$/,
       exclude: ['node_modules', './dist/bundle.js'],
       loader: 'babel-loader'
