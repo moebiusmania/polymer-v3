@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Polymer | JS workflow</title>
+    <title>Polymer v3</title>
     <link rel="shortcut icon" href="https://www.polymer-project.org/images/logos/p-logo-32.png">
     <link rel="stylesheet" href="./style.css">
 
@@ -16,7 +16,7 @@
         console.log('WebComponentsReady');
         var script = document.createElement('script');
         script.async = true;
-        script.src = "./bundle.js";
+        script.src = "./app.js";
         document.body.appendChild(script);
       });
     </script>
@@ -24,9 +24,7 @@
 </head>
 <body>
 
-  <fake-app>
-    <h2>Application title</h2>
-  </fake-app>
+  <my-element name="Salvo"></my-element>
   
 
 </body>

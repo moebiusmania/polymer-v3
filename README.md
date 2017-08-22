@@ -1,5 +1,5 @@
-# polymer-js
-Example of Javascript-first workflow in Polymer.
+# polymer-v3
+Testing the awesome new Polymer v3!
 
 ~~This repository holds example code for [this post on Medium]().~~ *(coming soon)*
 

@@ -1,34 +1,31 @@
 const path = require('path');
 const webpack = require('webpack');
 const WebpackNotifierPlugin = require('webpack-notifier');
-const UglifyEsPlugin = require('uglify-es-webpack-plugin');
+// const UglifyEsPlugin = require('uglify-es-webpack-plugin');
 
 module.exports = {
   entry: [
-    './index.js'
+    './src/index.js'
   ],
   output: {
     path: path.join(__dirname, './dist'),
-    filename: 'bundle.js',
+    filename: 'app.js',
   },
   devtool: 'source-map',
   plugins: [
-    new UglifyEsPlugin(),
+    // new UglifyEsPlugin(),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'production')
     }),
     new WebpackNotifierPlugin({
-      title: 'Polymer (2) JS',
+      title: 'Polymer v3',
       alwaysNotify: true
     })
   ],
   module: {
     rules: [{
-      test: /\.html$/,
-      loaders: ['babel-loader', 'wc-loader?minify=true']
-    },{
       test: /\.js?$/,
-      exclude: ['node_modules', './dist/bundle.js'],
+      exclude: ['node_modules', './dist/app.js'],
       loader: 'babel-loader'
     }]
   }
