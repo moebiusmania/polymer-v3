@@ -333,12 +333,12 @@ module.exports = __webpack_require__(6);
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_element_js__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_element__ = __webpack_require__(7);
 
 
 
 
-class MyElement extends __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_element_js__["a" /* Element */] {
+class MyElement extends __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_element__["a" /* Element */] {
   static get properties() {
     return {
       name: {
@@ -350,6 +350,12 @@ class MyElement extends __WEBPACK_IMPORTED_MODULE_0__polymer_polymer_polymer_ele
 
   static get template() {
     return `
+      <style>
+        h1{
+          color: #dd3311;
+          text-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+        }
+      </style>
       <h1>Hello [[name]]!</h1>
     `;
   }
