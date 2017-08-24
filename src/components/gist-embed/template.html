@@ -1,0 +1,31 @@
+<style>
+:host {
+    display: block;
+}
+:host .loading{
+    text-align: center;
+    color: #444;
+}
+:host,
+:host .loading{
+    min-height: 24px;
+    line-height: 24px;
+}
+:host > div{
+    display: none;
+} 
+:host > div.show{
+    display: block;
+}
+:host .no-meta .gist-meta{
+    display: none;
+}
+</style>
+
+<div class$="[[_compLoader(_loading)]]">
+Loading Gist from server...</div>
+
+<link rel="stylesheet" href="[[_css]]">
+
+<div class$="[[_compEmbed(_loading,noMeta)]]" 
+    inner-h-t-m-l="[[_html]]"></div>

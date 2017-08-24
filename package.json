@@ -10,7 +10,9 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "@polymer/polymer": "next"
+    "@polymer/polymer": "next",
+    "fetch-jsonp": "^1.1.1",
+    "redux": "^3.7.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -18,6 +20,8 @@
     "concurrently": "^3.5.0",
     "gh-pages": "^1.0.0",
     "http-server": "^0.10.0",
+    "text-loader": "^0.0.1",
+    "uglify-js": "git://github.com/mishoo/UglifyJS2#harmony-v2.8.22",
     "webpack": "^3.5.5",
     "webpack-notifier": "^1.5.0"
   }
